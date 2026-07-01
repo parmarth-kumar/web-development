@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Blog Page Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #faf7f2;
+            color: #222;
+        }
+        header, main, aside, footer, article, nav {
+            display: block;
+        }
+        header, footer, article, aside {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0f766e;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 18px;
+        }
+        main article + article {
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Semantic Blog</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <main id="home">
+            <article id="posts">
+                <h2>First Blog Post</h2>
+                <p>This article introduces the blog and explains how the author started learning HTML.</p>
+            </article>
+
+            <article>
+                <h2>Second Blog Post</h2>
+                <p>This article shares progress, practice notes, and lessons learned while building pages.</p>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Related Resources</h2>
+            <ul>
+                <li>HTML reference guide</li>
+                <li>Accessibility checklist</li>
+                <li>Layout practice exercises</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 My Semantic Blog</p>
+    </footer>
+</body>
+</html>

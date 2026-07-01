@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout Outline</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #f2eee6;
+            color: #222;
+        }
+        .heading-block,
+        .sidebar,
+        .main-article {
+            background: #fff;
+            border: 1px solid #d6d0c4;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+        .heading-block {
+            padding: 24px;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 18px;
+        }
+        .sidebar,
+        .main-article {
+            padding: 20px;
+        }
+        .sidebar h2,
+        .main-article h2 {
+            margin-top: 0;
+        }
+        .keyword {
+            color: #8b1e1e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-block">
+        <div class="keyword">The Daily Chronicle</div>
+        <h1>City Edition</h1>
+        <div>Thursday, July 2, 2026</div>
+    </div>
+
+    <div class="layout">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p><span class="keyword">Breaking</span> updates, weather notes, and short community notices live here.</p>
+            <p>Use this section for compact supporting details.</p>
+        </div>
+
+        <div class="main-article">
+            <h2>Main Article</h2>
+            <p>
+                The downtown market reopened this morning after repairs, bringing back a lively
+                atmosphere. Local vendors reported strong foot traffic and a renewed sense of
+                community.
+            </p>
+            <p>
+                Officials described the renovation as a <span class="keyword">major improvement</span>
+                for the neighborhood, especially for small businesses that depend on weekend sales.
+            </p>
+            <p>
+                Readers can scan the page for key facts, highlighted phrases, and grouped content
+                blocks to understand the structure of the layout.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
