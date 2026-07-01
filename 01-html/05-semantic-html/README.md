@@ -1,8 +1,8 @@
-# HTML Lists
+# Semantic HTML
 
 ## Files
 
-- [sandwich-ingredients-lists.html](./sandwich-ingredients-lists.html)
+- [semantic-portfolio-page.html](./semantic-portfolio-page.html)
 
 ## Revision Status
 
