@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page - Ada Lovelace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #f4efe8;
+            color: #231f20;
+        }
+        header, section, footer {
+            background: #fff;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        img {
+            width: 100%;
+            max-width: 420px;
+            display: block;
+            margin: 0 auto 16px;
+            border-radius: 12px;
+        }
+        .intro {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        ul {
+            line-height: 1.7;
+        }
+        .links a {
+            color: #8b4513;
+        }
+        @media (max-width: 720px) {
+            .intro {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ada Lovelace</h1>
+        <p>The pioneering mathematician often credited as the first computer programmer.</p>
+    </header>
+
+    <section class="intro">
+        <div>
+            <img src="./assets/ada-lovelace.svg" alt="Stylized tribute image for Ada Lovelace">
+        </div>
+        <div>
+            <h2>Why she matters</h2>
+            <p>
+                Ada Lovelace wrote detailed notes on Charles Babbage's Analytical Engine and
+                recognized that machines could go beyond arithmetic to process symbols and ideas.
+            </p>
+            <p>
+                Her thinking helped shape the future of programming and computing.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Timeline of accomplishments</h2>
+        <ul>
+            <li>1815 - Born in London.</li>
+            <li>1833 - Met Charles Babbage and became interested in the Analytical Engine.</li>
+            <li>1843 - Published notes describing the machine's potential and an algorithm for it.</li>
+            <li>1953 - Her work was republished and recognized more broadly by computing historians.</li>
+        </ul>
+    </section>
+
+    <section class="links">
+        <h2>Learn more</h2>
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank" rel="noopener noreferrer">Wikipedia biography</a>
+            and
+            <a href="https://www.britannica.com/biography/Ada-Lovelace" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>Tribute page created for HTML practice.</p>
+    </footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
-# HTML Lists
+# Mini Projects
 
 ## Files
-- [sandwich-ingredients-lists.html](./sandwich-ingredients-lists.html)
+- [personal-portfolio-page.html](./personal-portfolio-page.html)
 
 ## Revision Status
 - [ ] Understand
