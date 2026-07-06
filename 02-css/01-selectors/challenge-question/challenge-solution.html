@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grid Cards</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #25313c;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1f3b57;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #d7e0ea;
+            border-radius: 10px;
+            padding: 18px;
+            margin-top: 16px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        .card-primary {
+            background-color: #e8f2ff;
+            color: #12324d;
+        }
+
+        .card-secondary {
+            background-color: #eef7ee;
+            color: #21402b;
+        }
+
+        .card-accent {
+            background-color: #fff3e6;
+            color: #55351e;
+        }
+
+        .card:hover {
+            background-color: #ffffff;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .card-primary:hover {
+            background-color: #d8e9ff;
+        }
+
+        .card-secondary:hover {
+            background-color: #dcf0dc;
+        }
+
+        .card-accent:hover {
+            background-color: #ffe4c9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Grid Cards</h1>
+    <p>This page uses class selectors to style three cards with different colors and hover effects.</p>
+
+    <div class="card card-primary">
+        <h2>Starter Card</h2>
+        <p>A soft blue card that changes shade and shadow when hovered.</p>
+    </div>
+
+    <div class="card card-secondary">
+        <h2>Balanced Card</h2>
+        <p>A calm green card with the same hover behavior applied through class selectors.</p>
+    </div>
+
+    <div class="card card-accent">
+        <h2>Focus Card</h2>
+        <p>An orange card that highlights how reusable classes can create different looks.</p>
+    </div>
+</body>
+</html>
