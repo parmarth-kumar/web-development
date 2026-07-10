@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Center Layout & Flex Cards</title>
+    <style>
+        /* CSS Reset & General Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1b4d3e;
+            border-bottom: 2px solid #1b4d3e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1b4d3e;
+            margin: 30px 0 15px 0;
+        }
+
+        /* 1. Perfect Center Layout using CSS Flexbox */
+        .viewport-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            background-color: #e2e8f0;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .center-block {
+            background-color: #1b4d3e;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2. Row of Three Flexible Cards using CSS Flexbox */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #1b4d3e;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #1b4d3e;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Perfect Center Layout & Flex Cards</h1>
+
+    <h2>1. Centered Layout Container</h2>
+    <div class="viewport-container">
+        <div class="center-block">
+            I am perfectly centered!
+        </div>
+    </div>
+
+    <h2>2. Responsive Flex Cards</h2>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Card One</h3>
+            <p>This is the first card. Flexbox allows these cards to sit in a single row when there is enough screen width.</p>
+        </div>
+        <div class="card">
+            <h3>Card Two</h3>
+            <p>This is the second card. The flex-wrap property ensures that they wrap onto new lines on smaller viewports.</p>
+        </div>
+        <div class="card">
+            <h3>Card Three</h3>
+            <p>This is the third card. Each card has flex-grow enabled, allowing them to fill any remaining space in the container.</p>
+        </div>
+    </div>
+
+</body>
+</html>
