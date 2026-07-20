@@ -3,58 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consistent Card Component Sizing</title>
-    <style>
-        /* Apply standard reset box-sizing to all elements */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #1b4d3e;
-            border-bottom: 2px solid #1b4d3e;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        /* 
-           Card layout with specific width, margin, border, and padding.
-           Due to box-sizing: border-box, the total horizontal width remains exactly 300px.
-        */
-        .card {
-            width: 300px;
-            margin: 20px 0;
-            background-color: #ffffff;
-            border: 5px solid #1b4d3e;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .card h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Consistent Card Sizing Solution</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <h1>Consistent Card Component Sizing</h1>
 
     <div class="card">
         <h2>Card Component</h2>
-        <p>This card demonstrates consistent sizing using box-sizing: border-box. Margins, borders, and paddings are all contained within the set width of 300px.</p>
+        <p>This card demonstrates box-sizing: border-box, keeping total width at 300px with padding and border included.</p>
     </div>
-
 </body>
 </html>

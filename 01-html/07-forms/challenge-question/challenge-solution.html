@@ -3,97 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 24px;
-            background: #f7fafc;
-            color: #1f2937;
-        }
-        form {
-            background: #fff;
-            padding: 24px;
-            border-radius: 12px;
-            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-        }
-        .field {
-            margin-bottom: 16px;
-        }
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 6px;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            font: inherit;
-            box-sizing: border-box;
-        }
-        .inline {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .inline input {
-            width: auto;
-        }
-        button {
-            background: #0f766e;
-            color: #fff;
-            border: 0;
-            border-radius: 8px;
-            padding: 12px 18px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-    </style>
+    <title>User Registration Form Solution</title>
 </head>
 <body>
-    <h1>Job Application Form</h1>
+    <h1>User Registration Form</h1>
 
     <form action="#" method="post">
-        <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+        <div>
+            <label for="username">Full Name:</label><br>
+            <input type="text" id="username" name="username" required>
         </div>
+        <br>
 
-        <div class="field">
-            <label for="email">Email</label>
+        <div>
+            <label for="email">Email Address:</label><br>
             <input type="email" id="email" name="email" required>
         </div>
+        <br>
 
-        <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
         </div>
+        <br>
 
-        <div class="field">
-            <label for="position">Position applying for</label>
-            <select id="position" name="position" required>
-                <option value="">Select a position</option>
-                <option value="frontend-developer">Frontend Developer</option>
-                <option value="ui-designer">UI Designer</option>
-                <option value="content-writer">Content Writer</option>
+        <div>
+            <label for="role">Role:</label><br>
+            <select id="role" name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="student">Student</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
             </select>
         </div>
+        <br>
 
-        <div class="field">
-            <label for="cover-letter">Cover Letter</label>
-            <textarea id="cover-letter" name="cover_letter" rows="6" required></textarea>
+        <div>
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="40"></textarea>
         </div>
+        <br>
 
-        <div class="field inline">
-            <input type="checkbox" id="terms" name="agree_terms" required>
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
             <label for="terms">I agree to the terms and conditions</label>
         </div>
+        <br>
 
-        <button type="submit">Submit Application</button>
+        <button type="submit">Register</button>
     </form>
 </body>
 </html>
