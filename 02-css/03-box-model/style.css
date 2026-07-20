@@ -1,0 +1,9 @@
+div {
+  height: 200px;
+  width: 500px;
+  background-color: pink;
+  border-width: 0px 5px 10px 5px;
+  border-style: solid;
+  border-color: black;
+  border-left-style: groove;
+}
