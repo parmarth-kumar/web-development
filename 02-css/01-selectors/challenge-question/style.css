@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+.card {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-one {
+    background-color: white;
+    color: black;
+}
+
+.card-two {
+    background-color: lightyellow;
+    color: darkred;
+}
+
+.card-three {
+    background-color: lightcyan;
+    color: darkblue;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 8px gray;
+}
+
+.card-one:hover {
+    background-color: lightgray;
+}
+
+.card-two:hover {
+    background-color: yellow;
+}
+
+.card-three:hover {
+    background-color: cyan;
+}

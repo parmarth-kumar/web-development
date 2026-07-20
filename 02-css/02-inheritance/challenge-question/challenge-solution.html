@@ -3,93 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reset Form Typography via Inheritance</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f3f6f9;
-            color: #2d3748;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #1f4e3d;
-            margin-bottom: 12px;
-        }
-
-        .panel {
-            background-color: #ffffff;
-            border: 1px solid #d7e0ea;
-            border-radius: 10px;
-            padding: 20px;
-            font-family: Georgia, serif;
-            color: #355066;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-        }
-
-        .panel p {
-            line-height: 1.6;
-        }
-
-        form {
-            margin-top: 18px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-            margin-top: 12px;
-        }
-
-        input,
-        button {
-            font-family: inherit;
-            color: inherit;
-            font-size: 1rem;
-        }
-
-        input {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 10px;
-            border: 1px solid #b8c6d4;
-            border-radius: 6px;
-            background-color: #f9fbfd;
-        }
-
-        button {
-            margin-top: 16px;
-            padding: 10px 16px;
-            border: none;
-            border-radius: 6px;
-            background-color: #1f4e3d;
-            color: #ffffff;
-            cursor: pointer;
-        }
-    </style>
+    <title>Reset Form Typography Solution</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Reset Form Typography via Inheritance</h1>
 
-    <div class="panel">
-        <p>
-            This panel sets the font and text color once, then the form controls inherit those
-            styles so they match the rest of the layout.
-        </p>
+    <div class="parent-container">
+        <h2>Parent Container (Georgia Font & Dark Blue Color)</h2>
+        <p>The form fields below use inherit to match the parent font and color.</p>
 
         <form>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Enter your name" />
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
 
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter your email" />
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" placeholder="Enter email">
 
-            <label for="message">Message</label>
-            <input id="message" type="text" placeholder="Write a short message" />
-
-            <button type="submit">Send Message</button>
+            <br>
+            <button type="submit">Submit Form</button>
         </form>
     </div>
 </body>
