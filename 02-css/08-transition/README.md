@@ -1,11 +1,13 @@
 # CSS Transition
 
 ## Files
-
-_(No files added yet)_
+- `transition.html`
+- `transition.css`
+- `tranform.html`
+- `transform.css`
+- `challenge-question/`
 
 ## Revision Status
-
-- [ ] Understand
-- [ ] Can build without tutorial
-- [ ] Can explain to friend
+- [x] Understand
+- [x] Can build without tutorial
+- [x] Can explain to friend
