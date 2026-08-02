@@ -1,9 +1,10 @@
 # Responsive Design
 
 ## Files
-*(No files added yet)*
+- `Pet Adoption/`
+- `challenge-question/`
 
 ## Revision Status
-- [ ] Understand
-- [ ] Can build without tutorial
-- [ ] Can explain to friend
+- [x] Understand
+- [x] Can build without tutorial
+- [x] Can explain to friend

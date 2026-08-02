@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #1b4d3e;
+    margin-bottom: 30px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card.featured {
+    border-color: #1b4d3e;
+}
+
+.pricing-card h2 {
+    color: #1b4d3e;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.pricing-card button {
+    background-color: #1b4d3e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column;
+    }
+}
