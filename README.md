@@ -71,6 +71,8 @@ Future topics include:
 - Display
 - Flexbox
 - Grid
+- Responsive Design
+- Transitions
 
 ---
 
